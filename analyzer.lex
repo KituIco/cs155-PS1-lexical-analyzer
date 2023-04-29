@@ -8,7 +8,7 @@
 %}
 
 %%
-    /* =========== RESERVED WORDS =========== */
+    /* ============== RESERVED WORDS ============== */
 "go to"                 display_token("RSRVD_GOTO");
 "exit"                  display_token("RSRVD_EXIT");
 "else if"               display_token("RSRVD_ELSEIF");
