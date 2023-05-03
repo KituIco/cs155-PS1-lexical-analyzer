@@ -90,12 +90,13 @@
     /* =========== Number or String Literals =========== */
 [0-9]+[.][0-9]+         display_token("LIT_FLOAT");
 [0-9]+                  display_token("LIT_INT");
-[']{1}[^']*[']{1}      display_token("LIT_STR");
-[\"]{1}[^\"]*[\"]{1}   display_token("LIT_STR");
+[']{1}[^']*[']{1}       display_token("LIT_STR");
+[\"]{1}[^\"]*[\"]{1}    display_token("LIT_STR");
 
     /* ============= Miscellaneous Tokens ============= */
-"▷"[^\n]*             display_token("COMMENT");
-"//"[^\n]*             display_token("COMMENT");
+"▷"[^\n]*               display_token("COMMENT");
+"//"[^\n]*              display_token("COMMENT");
+"/*"[^\r]*"*/"          display_token("COMMENT");
 [ \t\n]                 /* ignore */
 .                       display_token("UNIDENTIFIED");
 %%

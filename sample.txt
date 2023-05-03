@@ -13,4 +13,9 @@ endwhile
 
 output "Well Done"
 return(0)           ▷ unsuccessful search
-end BINARY_SEARCH
+end BINARY_SEARCH   
+
+/*  comment with new lines
+    comment with new lines 
+    comment with new lines
+    comment with new lines  */
