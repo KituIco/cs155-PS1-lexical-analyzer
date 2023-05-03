@@ -38,10 +38,6 @@
 "end"                   display_token("RSRVD_END");
 "procedure"             display_token("RSRVD_PROCEDURE");
 
-    /* ============== Assignment Operator ============== */
-"←"                     display_token("OP_ASSIGN");
-":="                    display_token("OP_ASSIGN");
-
     /* ============= Arithmetic Operators ============= */
 "+"                     display_token("OP_ARITH_ADD");
 "-"                     display_token("OP_ARITH_SUB");
@@ -61,8 +57,13 @@
 ">="                    display_token("OP_REL_GEQ");
 "<"                     display_token("OP_REL_LESS");
 ">"                     display_token("OP_REL_GRTR");
-"="                     display_token("OP_REL_EQ");
+"=="                    display_token("OP_REL_EQ");
 "≠"                     display_token("OP_REL_NEQ");
+
+    /* ============== Assignment Operator ============== */
+"←"                     display_token("OP_ASSIGN");
+":="                    display_token("OP_ASSIGN");
+"="                     display_token("OP_ASSIGN");
 
     /* ============= Mathematic Notations ============= */
 "⌊"                     display_token("MATH_LFLOOR");
